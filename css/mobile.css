@@ -454,6 +454,7 @@ span {
 .footer-btn:focus {
   background-color: var(--background-btn-hover-color);
 }
+
 /* BACKDROP */
 .backdrop {
   position: fixed;

@@ -324,15 +324,15 @@
   .footer {
     background-color: var(--main-color);
     padding: 96px 0;
+    padding-left: 108px;
   }
   .footer-container {
     display: flex;
+    flex-wrap: wrap;
   }
   .footer-wrap:first-child {
     margin-right: 24px;
-  }
-  .footer-wrap:last-child {
-    margin-top: 72px;
+    margin-bottom: 72px;
   }
 
   .footer-text {
@@ -357,7 +357,7 @@
   .footer-social-links {
     display: flex;
     gap: 16px;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .footer-link {
     display: flex;

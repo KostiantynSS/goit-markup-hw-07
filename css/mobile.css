@@ -83,6 +83,7 @@ p,
 a,
 span {
   margin: 0;
+  padding: 0;
 }
 .list {
   list-style: none;
@@ -199,7 +200,7 @@ span {
   line-height: 1.5;
 
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: var(--contact-color);
 
   text-align: left;
 }
@@ -776,6 +777,6 @@ span {
 @media screen and (min-width: 428px) {
   /* DEFAULT */
   .container {
-    width: 428px;
+    max-width: 428px;
   }
 }

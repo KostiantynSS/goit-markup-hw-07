@@ -454,7 +454,116 @@ span {
 .footer-btn:focus {
   background-color: var(--background-btn-hover-color);
 }
+/* PORTFOLIO PAGE */
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.presentation {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.presentation-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 
+.nav-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  color: var(--btn-nohover-text-color);
+  background-color: var(--btn-nohover-background-color);
+  padding: 12px 24px;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  transition-property: box-shadow, border-color, color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-text-color);
+  border-color: var(--background-btn-hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.presentation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.presentation-list > .item {
+  width: calc((100% - 48px) / 3);
+}
+
+.presentation-list-text {
+  border: 1px solid var(--accent-color);
+  padding: 32px 16px;
+  border-top: transparent;
+}
+.presentation-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.presentation-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+}
+.presentation-link {
+  text-decoration: none;
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.presentation-link:hover,
+.presentation-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.presentation-link:hover .presentation-cover-text,
+.presentation-link:focus .presentation-cover-text {
+  transform: translate(0);
+}
+/* TRANSITION PORTFOLIO */
+.presentation-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.presentation-cover-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #f4f4fd;
+
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  background-color: var(--background-btn-color);
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* BACKDROP */
 .backdrop {
   position: fixed;
@@ -667,6 +776,6 @@ span {
 @media screen and (min-width: 428px) {
   /* DEFAULT */
   .container {
-    max-width: 428px;
+    width: 428px;
   }
 }

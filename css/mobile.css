@@ -181,12 +181,7 @@ span {
 .mobile-item:is(:active, :focus) {
   color: var(--header-action-color);
 }
-.mobile-address {
-}
-.mobile-address-list {
-}
-.mobile-address-item {
-}
+
 .mobile-address-item:first-child {
   margin-bottom: 40px;
 }

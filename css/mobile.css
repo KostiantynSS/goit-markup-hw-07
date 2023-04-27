@@ -115,6 +115,14 @@ span {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.mobile-menu > .icon {
+  stroke: var(--main-color);
+  background-color: transparent;
+}
+.mobile-menu {
+  border-color: transparent;
+  background-color: transparent;
+}
 /* ADDRESS */
 .main-address {
   display: none;
@@ -136,10 +144,21 @@ span {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-hero.jpg);
+    url(../images/background-hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-hero-mob-x2.jpg);
+  }
 }
 .hero-text {
   font-weight: 700;
@@ -778,5 +797,24 @@ span {
   /* DEFAULT */
   .container {
     max-width: 428px;
+  }
+  /* HERO */
+  .hero-background {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-hero-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-hero-tab-x2.jpg);
+    }
   }
 }

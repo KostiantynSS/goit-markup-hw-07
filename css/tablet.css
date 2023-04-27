@@ -85,7 +85,9 @@
   .address-item:focus {
     color: var(--header-action-color);
   }
-
+  .mob-menu {
+    display: none;
+  }
   /* MAIN */
   /* HERO */
   .hero-text {
@@ -237,7 +239,7 @@
 
   /* MODAL */
   .modal {
-    width: 392px;
+    width: 408px;
     min-height: 584px;
 
     padding: 72px 16px 24px;

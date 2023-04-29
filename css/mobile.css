@@ -182,13 +182,13 @@ span {
 .mobile-item:is(:active, :focus) {
   color: var(--header-action-color);
 }
-
-.mobile-address-item:first-child {
-  margin-bottom: 40px;
-}
-.mobile-address-item:last-child {
+.mobile-address-list {
   margin-bottom: 48px;
 }
+.mobile-address-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .mob-tel {
   font-weight: 500;
   font-size: 20px;
@@ -197,6 +197,7 @@ span {
   letter-spacing: 0.02em;
   color: var(--header-action-color);
   text-decoration: none;
+  font-style: normal;
 }
 
 .mob-email {
@@ -373,13 +374,12 @@ span {
 .team-list-title {
   margin-top: 32px;
   margin-bottom: 8px;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
   letter-spacing: 0.02em;
   text-align: center;
+  color: var(--main-color);
 }
 
 .team-list-text {
@@ -388,6 +388,7 @@ span {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+  color: var(--team-text-color);
 }
 .item > .team-img {
   margin: 0 auto;

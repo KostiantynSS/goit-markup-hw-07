@@ -3,6 +3,9 @@
     max-width: 1158px;
     padding: 0 15px;
   }
+  .container:last-child {
+    width: 1158px;
+  }
 
   /* HEADER */
   .header {
